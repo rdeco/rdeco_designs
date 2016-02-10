@@ -1730,10 +1730,7 @@ div.wpcf7-mail-sent-ok {
 		margin-bottom: 10px;	
 	}
 	
-	#menu-1 a img{
-		width: 40%;
-		height: auto;
-	}
+
 	
 
 }
@@ -1823,6 +1820,14 @@ div.wpcf7-mail-sent-ok {
 		text-align:center;
 		margin: 0 ;
 	}
+	
+	.menu-item.social-icon {
+    	margin: 0% -11% 0 0%;
+    }
+    
+	.menu-item.social-icon img {
+	    width: 50%;
+	}    
 	
 	/* front page */
 	
@@ -1957,6 +1962,15 @@ div.wpcf7-mail-sent-ok {
 		text-align:center;
 		margin: 0 ;
 	}
+	
+	#menu-1 a img{
+		width: 60%;
+		height: auto;
+	}
+	
+	.menu-item.social-icon {
+    	margin: 0% -8% 0 5%;
+    }
 	
 	
 	/* menu button */
@@ -2340,9 +2354,19 @@ div.wpcf7-mail-sent-ok {
 /*————————————— START OF MIN-WIDTH 320px and MAX-WIDTH 414px ( iphone4, iphone5, iphone6, iphone6+ --- portrait only ) ——————————————*/
 
 @media only screen and (min-width: 20.000em) and (max-width: 25.875em) {
+	
 	.btn-nav{
 		margin-top: 20%;
 	}
+	
+	.menu-item.social-icon img {
+    	width: 40%;
+	}
+	
+	.menu-item.social-icon {
+    	margin: 0% -12% 0 -4%;
+    }
+	/* portfolio */
 	
 	.og-details {
     	padding: 0 20px;
