@@ -63,7 +63,9 @@ button{
 	outline: none;
 }
 
-a.focus{
+#menu-menu-1 li a:focus,
+#menu-menu-1 li a:active,
+#menu-menu-1 li a:visited{
 	text-decoration: none;
 }
 
@@ -71,10 +73,7 @@ hr.menu-hr{
 	border-top:none;
 }
 
-li:active,
-li:focus{
-	text-decoration: underline;
-}
+
 
 hr.diamond-break{
 	background: url("../imgs/rdecodesigns-hr.png") top center;
@@ -606,6 +605,10 @@ figcaption{
 
 
 /* single portfolio */
+
+.row.single-portfolio-img{
+	margin-top: -3%;
+}
 
 .single-portfolio-wrapper{
 	position: absolute;
@@ -2366,6 +2369,7 @@ div.wpcf7-mail-sent-ok {
 	.menu-item.social-icon {
     	margin: 0% -12% 0 -4%;
     }
+    
 	/* portfolio */
 	
 	.og-details {
