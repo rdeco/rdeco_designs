@@ -1866,9 +1866,7 @@ div.wpcf7-mail-sent-ok {
 	
 	/* navigation menu */
 	
-	.st-menu {
-		padding-top: 5%;
-    }
+
     	
 	.st-menu ul{
 		height: 100vh;
@@ -2073,11 +2071,13 @@ div.wpcf7-mail-sent-ok {
 	/* navigation menu */
 	
 	.st-menu{
-		width:35%;
+		padding-top: 0;		
+		width:35%;		
+		overflow: auto;
 	}
-	
+
 	.st-menu.st-effect-1 li {
-		font-size: 1.8em;	
+		font-size: 1.6em;	
 	}
 
 	
@@ -2087,14 +2087,18 @@ div.wpcf7-mail-sent-ok {
 	}
 	
 	#menu-1 a img{
-		width: 60%;
+		width: 50%;
 		height: auto;
 	}
 	
 	.menu-item.social-icon {
-    	margin: 0% -8% 0 5%;
+    	margin: 0% -10% 0 5%;
     }
-	
+    
+.menu-item.social-icon img {
+
+    margin-top: 2em;
+}
 	
 	/* menu button */
 	
@@ -2267,9 +2271,16 @@ div.wpcf7-mail-sent-ok {
 		height: auto;
 	}
 	
- 	
+	
+	.menu-item.social-icon img {
+		margin-top: 1em;
+   		width: 65%;
+	}
+	
 	.st-menu{
 		width:40%;
+		padding-top: 0;
+		overflow: auto;
 	}
 
 	
@@ -2524,13 +2535,14 @@ div.wpcf7-mail-sent-ok {
 	}
 	
 	.menu-item.social-icon img {
-    	width: 40%;
+    	width: 25%;
 	}
 	
 	.menu-item.social-icon {
-    	margin: 0% -12% 0 -4%;
+		display: block;
+    	margin: 0% auto;
     }
-    
+
 	/* portfolio */
 	
 	.og-details {
@@ -2587,6 +2599,16 @@ div.wpcf7-mail-sent-ok {
 /*————————————— START OF MIN-WIDTH 415px and MAX-WIDTH 668px ( iphone4, iphone5, iphone6  --- landscape only ) ——————————————*/
 
 @media only screen and (min-width: 25.938em) and (max-width: 41.750em) {
+	
+	/* navigation menu */
+	
+	.menu-item.social-icon {		
+    	margin: 0% -2% 0 auto;
+	}
+	
+	.menu-item.social-icon img{
+		width: 55%;
+	}
 	
 	/* single blog page */
 	
