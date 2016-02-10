@@ -63,6 +63,10 @@ button{
 	outline: none;
 }
 
+a.focus{
+	text-decoration: none;
+}
+
 hr.menu-hr{
 	border-top:none;
 }
@@ -223,8 +227,6 @@ li.menu-item a img:hover{
     color: rgb(226, 220, 204);
     text-transform: uppercase;
     letter-spacing: 3px;
-    -webkit-transition: background 0.3s, box-shadow 0.3s;
-    transition: background 0.3s, box-shadow 0.3s;
     text-align: center;
 	-webkit-transition: background 0.3s, box-shadow 0.3s;
 	transition: background 0.3s, box-shadow 0.3s;
@@ -261,11 +263,18 @@ li.social-icon a i{
 }	
 
 .menu-item.social-icon{
-	margin: 0% -14% 0 20%;
+	margin: 0% -13% 0 13%;
+}
+
+.menu-item.social-icon img{
+	width: 70%;
+	height: auto;
+	margin-top: 4em;
+	opacity: 0.6;
 }
 
 .menu-item.social-icon:hover{
-	opacity: 0.7;
+	opacity: 0.4;
 }
 
 /* Effect 1: Slide in on top */
