@@ -33,11 +33,15 @@ function rdeco_scripts() {
     wp_enqueue_script('bootstrap-min-js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), true, true);  
 	wp_enqueue_script('classie-js', get_template_directory_uri().'/js/classie.js', array(), true, true);
     wp_enqueue_script('modernizr-79639-js', get_template_directory_uri().'/js/modernizr.custom.79639.js', array(), true, false);	
+    
     wp_enqueue_script('sidebarEffects-js', get_template_directory_uri().'/js/sidebarEffects.js', array('modernizr-79639-js', 'classie-js'), true, true); 	
     wp_enqueue_script('grid-js', get_template_directory_uri().'/js/grid.js', array('jquery', 'modernizr-79639-js'), true, true); 	
     wp_enqueue_script('grid-theme-js', get_template_directory_uri().'/js/grid-theme.js', array('grid-js'), true, true);   
 
-      	
+    wp_enqueue_script('single-portfolio-toggle-js', get_template_directory_uri().'/js/single-portfolio-toggle.js', array('jquery'), true, true); 	
+
+
+
 	if(is_single()){
     	    wp_enqueue_script('main-js', get_template_directory_uri().'/js/main.js', array('jquery', 'classie-js'), true, true);          			
 	};	
