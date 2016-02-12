@@ -288,7 +288,6 @@ if (class_exists('MultiPostThumbnails')) {
         )
          
     );
-
 }
 
 if (class_exists('MultiPostThumbnails')) {
