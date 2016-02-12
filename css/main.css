@@ -27,7 +27,7 @@ single portfolio images -> 900px x 500px
 
 ----------------------------------------/
 
-/*---------- start of global styles ---------------*/
+/*start of global styles ---------------------------------------------------------------------------*/
 
 .group::after{
 	content: " ";
@@ -100,9 +100,8 @@ hr.diamond-break{
 	color: rgba(2, 11, 34, .8);
 }
 
-/*---------- end of global styles ---------------*/
 
-/*---------- start of navigation ---------------*/
+/* start of navigation ---------------------------------------------------------------------------*/
 
 .st-container,
 .st-pusher,
@@ -326,10 +325,8 @@ nav.st-effect-1.st-menu {
     font-size: 2.5em;	
 }
 
-/*---------- end of navigation ---------------*/
 
-
-/* front page */
+/* front page ---------------------------------------------------------------------------*/
 
 a.logo-link:hover{
 	opacity: 0.3;
@@ -401,7 +398,7 @@ p:first-child:first-letter {
 
 */
 
-/* portfolio page */
+/* portfolio page ---------------------------------------------------------------------------*/
 
 
 /* container */
@@ -604,7 +601,7 @@ figcaption{
 }
 
 
-/* single portfolio */
+/* single portfolio ---------------------------------------------------------------------------*/
 
 .row.single-portfolio-img{
 	margin-top: -3%;
@@ -675,7 +672,7 @@ a.btn:hover{
 }
 
 
-/* expanding portfolio grid */
+/* expanding portfolio grid for screenshots*/
 
 .og-grid {
 	list-style: none;
@@ -807,7 +804,10 @@ a.btn:hover{
 	letter-spacing: 1px;
 }
 
+
+
 .og-details a {
+	/*
 	font-weight: 100;
 	font-size: 16px;
 	color: rgba(226, 220, 204, 0.95);
@@ -819,7 +819,10 @@ a.btn:hover{
 	margin: 30px 0 0;
 	outline: none;
 	font-family: 'Raleway', sans-serif;
+	*/
+	display: none;
 }
+/*
 
 .og-details a::before {
 	content: '\2192';
@@ -827,11 +830,13 @@ a.btn:hover{
 	margin-right: 10px;
 }
 
+
 .og-details a:hover {
 	border-color: rgba(226, 220, 204, 0.65);
 	color: rgba(226, 220, 204, 0.65);
 	text-decoration: none;
 }
+*/
 
 .og-loading {
 	width: 20px;
@@ -846,6 +851,22 @@ a.btn:hover{
 	-webkit-animation: loader 0.5s infinite ease-in-out both;
 	-moz-animation: loader 0.5s infinite ease-in-out both;
 	animation: loader 0.5s infinite ease-in-out both;
+}
+
+
+
+/* portfolio grid for screenshots */
+
+.mockups-grid li {
+	padding: 5px;
+	height: auto;
+	margin: 2% auto;
+
+} 
+
+.og-grid.mockups-grid{
+	padding: 0.5%;
+	background: rgba(226, 220, 204, 0.15);
 }
 
 @-webkit-keyframes loader {
@@ -888,7 +909,7 @@ a.btn:hover{
 
 
 
-/*---------------------------------------- START OF BLOG ARCHIVE/CATEGORY STYLES ----------------------------------------*/
+/*  START OF BLOG ARCHIVE/CATEGORY STYLES ----------------------------------------*/
 
 
 body.page.custom-background {
@@ -1006,9 +1027,8 @@ p.blog-excerpt{
     margin: 0 auto;	
 	font-size: 1.5em;
 }
-/*---------------------------------------- END OF BLOG ARCHIVE STYLES ----------------------------------------*/
 
-/*---------------------------------------- START OF BLOG PAGE  STYLES ----------------------------------------*/
+/* START OF BLOG PAGE  STYLES ----------------------------------------*/
 
 
 .container.intro-effect-fadeout{
@@ -1362,10 +1382,7 @@ button.trigger span::before {
 
 
 
-/*---------------------------------------- END OF BLOG PAGE  STYLES ----------------------------------------*/
-
-
-/*---------------------------------------- START OF PAGE STYLES ----------------------------------------*/
+/*  START OF PAGE STYLES ----------------------------------------*/
 
 .about-img{
 	background: black;
@@ -1548,9 +1565,9 @@ a.para-link:hover,
 a.para-link:focus{
 	color: rgba(126, 55, 73, 0.7);
 }
-/*---------------------------------------- END OF PAGE STYLES ----------------------------------------*/
 
-/* START OF CONTACT PAGE*/
+
+/* START OF CONTACT PAGE ---------------------------------------------------------------------------*/
 
 
 .contact.col-xs-12{
@@ -1721,11 +1738,9 @@ div.wpcf7-mail-sent-ok {
     color: rgb(226, 220, 204);
 }
 
+/*  START OF 404 PAGE STYLES ----------------------------------------*/
 
 
-
-
-/*---------------------------------------- START OF 404 PAGE STYLES ----------------------------------------*/
 .error404{
 	overflow: hidden;
 }
@@ -1828,10 +1843,6 @@ div.wpcf7-mail-sent-ok {
     opacity:0.9;
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
-
-
-/*---------------------------------------- END OF 404 PAGE STYLES ----------------------------------------*/
-
 
 
    
