@@ -2,72 +2,117 @@
 	/* 
 		Template Name: About Page
 	*/ 
-	get_header(); ?>			  	
+	get_header(); ?>	
 
-		<div class="row">		  			  	
-		  	<div class="about-page col-xs-12"> 	
-		  		<?php
-					if (have_posts()){
-						while(have_posts()){
-							the_post();
-				?>	
-				<div class="row">
-					<aside class="about-img hidden-sm hidden-xs col-md-6">
-						<?php 
-							if ( has_post_thumbnail() ) { 
-								the_post_thumbnail();
-							} 
-						?>						
-					</aside>	  	
-		 			<section class="about-page col-md-12 col-lg-6">
-					<h1 class="about-title"><?php the_title(); ?></h1>																	
-						<aside class="mb-wrap mb-style-2">
 
-							<blockquote>
-								<p>
-									<?php
-										$postmeta = get_post_meta($post->ID);
-											if ( isset($postmeta['meta_box_quote_field'][0]) ) {
-												echo $postmeta['meta_box_quote_field'][0];
-											}
-					                  ?>
-								</p>
-							</blockquote>
-							<div class="mb-attribution">
-								<p class="mb-author">
-									<?php
-										$postmeta = get_post_meta($post->ID);
+		<div class="about-page container">
+  		<?php
+				if (have_posts()){
+					while(have_posts()){
+						the_post();
+		  ?>	
+			<div id="splitlayout" class="splitlayout">
+				<div class="intro">
+  				
+					<div class="side side-left">
+						<div class="intro-content">
+
+              <h1 class="about-title">
+                <?php the_title(); ?>
+              </h1>	
+              																
+  						<aside class="mb-wrap mb-style-2 about-left">
+  							<blockquote>
+  								<p>
+  									<?php
+  										$postmeta = get_post_meta($post->ID);
+  											if ( isset($postmeta['meta_box_quote_field'][0]) ) {
+  												echo $postmeta['meta_box_quote_field'][0];
+  											}
+  					        ?>
+  								</p>
+  							</blockquote>
+  							<div class="mb-attribution about-left">
+  								<p class="mb-author about-left">
+  									<?php
+  										$postmeta = get_post_meta($post->ID);
+  										
+  										if ( isset($postmeta['meta_box_authorName_field'][0]) ) {
+  										    echo $postmeta['meta_box_authorName_field'][0];
+  										}
+  				          ?>
+  								</p>
+  								<cite>                          
+    								<?php
+    									$postmeta = get_post_meta($post->ID);
+    									
+    									if ( isset($postmeta['meta_box_quoteName_field'][0]) ) {
+    									    echo $postmeta['meta_box_quoteName_field'][0];
+    									}
+    				        ?>
+  				        </cite>
+  							</div> <!-- .mb-atttribution-left -->					
+  						</aside>
+				    </div> <!-- .intro-content -->
+            <div class="overlay"></div>
+				  </div> <!-- .side .side-left -->
 										
-										if ( isset($postmeta['meta_box_authorName_field'][0]) ) {
-										    echo $postmeta['meta_box_authorName_field'][0];
-										}
-				                	?>
-								</p>
-								<cite>                          
-								<?php
-									$postmeta = get_post_meta($post->ID);
-									
-									if ( isset($postmeta['meta_box_quoteName_field'][0]) ) {
-									    echo $postmeta['meta_box_quoteName_field'][0];
-									}
-				                ?>
-				                </cite>
-							</div>					
-						</aside>
-		
-						<article class="page-para ">													
-							<?php 	the_content(); 	 ?> 	
-						</article>
+					<div class="side side-right">
+						<div class="intro-content">
 
-					</section>
-					<?php				
-						}
-					}
-					?>
-				</div><!-- .row -->
-									
-		  	</div>
-		</div>
+              <h1 class="about-title about-right">
+    								<?php
+    									$postmeta = get_post_meta($post->ID);
+    									
+    									if ( isset($postmeta['meta_box_title_field'][0]) ) {
+    									    echo $postmeta['meta_box_title_field'][0];
+    									}
+    				        ?>
+              </h1>																	
+  						<aside class="mb-wrap mb-style-2 about-right">
+  
+  							<blockquote>
+  								<p>
 
+  								</p>
+  							</blockquote>
+  							<div class="mb-attribution about-right">
+  								<p class="mb-author about-right">
+  	
+  								</p>
+
+						    </div> <!-- mb-attribution -->				
+						  </aside>
+						</div> <!-- intro-content -->
+						<div class="overlay"></div>
+					</div> <!-- .side .side-right -->
+				</div><!-- /intro -->
+				
+				<div class="page page-right">
+					<div class="page-inner">
+						<section>
+            <?php echo rwmb_meta( 'rdeco-wysiwyg' ); ?>					
+    				</section>
+					</div><!-- /page-inner -->
+				</div><!-- /page-right -->
+				
+				<div class="page page-left">
+					<div class="page-inner">
+						<section>
+  						<?php the_content(); ?>
+						</section>
+					</div><!-- /page-inner -->
+				</div><!-- /page-left -->
+				
+				<a href="#" class="back back-right" title="back to intro">&rarr;</a>
+				<a href="#" class="back back-left" title="back to intro">&larr;</a>
+			</div><!-- /splitlayout -->
+			<?php 
+  			  }
+  			} 
+  		?>
+		</div><!-- /container -->
+
+	
 	
 <?php get_footer(); ?>
